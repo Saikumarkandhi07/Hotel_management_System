@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+	 <h1>Update Hotels</h1>
+	 <form action="/updatedHotel" th:object="${hotel}">
+		  <input th:field="${hotel.hotelid}" >
+		  <br><br>
+		  <input th:field="${hotel.hotelname}" >
+		  <br><br>
+		  <input th:field="${hotel.contactnumber}">
+		  <br><br>
+		  <input th:field="${hotel.price}">
+		  <br><br>
+		  <input th:field="${hotel.city}">
+		  <br><br>
+		  <input th:field="${hotel.address}">
+		  <input type="submit"><br><br>
+	  </form>
+</center>
+</body>
+</html>
